@@ -1,0 +1,1 @@
+This is a code snippet of a bill generator
