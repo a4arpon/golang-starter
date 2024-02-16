@@ -34,11 +34,22 @@ func promptOptions(bill Bill) {
 		bill.addItem(name, p)
 		print("Product Added", name, p)
 		promptOptions(bill)
+
 	case "s":
-		print("You choose to save the bill")
+		bill.saveBill()
+		print("You choose to save the bill ")
+
 	case "d":
-		donation, _ := getInput("Donation For Palestine", reader)
-		print("You choose to make a donation", donation)
+		donation, _ := getInput("Donation For Palestine ($) ", reader)
+		d, err := strconv.ParseFloat(donation, 64)
+		if err != nil {
+			print("Donation must be a number.")
+			promptOptions(bill)
+		}
+		bill.charityForPalestine(d)
+		print("You choose to make a donation", d)
+		promptOptions(bill)
+
 	default:
 		print("Not a valid option")
 		promptOptions(bill)
@@ -48,8 +59,9 @@ func promptOptions(bill Bill) {
 func createBill() Bill {
 	reader := bufio.NewReader(os.Stdin)
 	name, _ := getInput("Customer Name : ", reader)
+	phone, _ := getInput("Customer Phone : ", reader)
 
-	bill := newBill(name)
+	bill := newBill(name, phone)
 
 	return bill
 }

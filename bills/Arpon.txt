@@ -1,0 +1,10 @@
+Customer : Arpon
+Phone : 01995932380
+Bill Breakdown 
+Logitech Mouse:                   $5.41 
+AMD Ryzen 5600G:                  $130 
+Kingstone SSD 512 GB NVME m.2:    $20 
+Monitor MSI:                      $110 
+Logitech Keyboard:                $5.3 
+Donation:                         $10
+Total:                            $280.71

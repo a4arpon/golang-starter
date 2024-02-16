@@ -1,0 +1,10 @@
+Customer : Rifa
+Phone : 01934455809
+Bill Breakdown 
+Acer Monitor:                    $90.34 
+Intel Nuke i3 Edtion:            $250 
+A4Tech Wirelss Mouse:            $20 
+A4Tech wireless keyboard:        $25 
+Kingstone 256 GB NVME m.2 SSD:   $30 
+Donation:                        $8
+Total:                           $423.34
